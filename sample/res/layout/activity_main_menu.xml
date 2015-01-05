@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout android:visibility="gone"
+        android:id="@+id/icon_position_layout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/icon_left"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="left"/>
+
+        <Button
+            android:id="@+id/icon_top"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="top"/>
+
+
+        <Button
+            android:id="@+id/icon_right"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="right"/>
+
+        <Button
+            android:id="@+id/icon_bottom"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bottom"/>
+
+    </LinearLayout>
+
+    <com.astuetz.PagerSlidingTabStripMenu
+        android:id="@+id/tabs"
+        android:layout_below="@id/icon_position_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:pstsShouldExpand="true"
+        app:pstsIconPosition="top"
+        app:pstsIndicatorHeight="4dp"
+        app:pstsTabPaddingTop="5dp"
+        app:pstsTabPaddingBottom="10dp"
+        android:background="@drawable/background_tabs" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/colors"
+        android:layout_below="@+id/tabs"
+        tools:context=".MainActivity" />
+
+    <LinearLayout
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="#FF666666"
+            android:onClick="onColorClicked"
+            android:tag="#FF666666" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="#FF96AA39"
+            android:onClick="onColorClicked"
+            android:tag="#FF96AA39" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="#FFC74B46"
+            android:onClick="onColorClicked"
+            android:tag="#FFC74B46" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="#FFF4842D"
+            android:onClick="onColorClicked"
+            android:tag="#FFF4842D" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="#FF3F9FE0"
+            android:onClick="onColorClicked"
+            android:tag="#FF3F9FE0" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="#FF5161BC"
+            android:onClick="onColorClicked"
+            android:tag="#FF5161BC" />
+    </LinearLayout>
+
+</RelativeLayout>
