@@ -2,6 +2,11 @@
 
 实现图标+文字不可滑动的Tab导航
 
+
+
+
+ref：https://github.com/astuetz/PagerSlidingTabStrip
+
 # Android PagerSlidingTabStrip
 
 Interactive paging indicator widget, compatible with the `ViewPager` from the 
