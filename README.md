@@ -2,10 +2,16 @@
 
 实现图标+文字不可滑动的Tab导航
 
+![PagerSlidingTabStrip Sample Screenshot 1](https://raw.githubusercontent.com/huazhiyuan2008/PagerSlidingTabStripPlus/master/pic/device-2015-01-05-234140.png)
+![PagerSlidingTabStrip Sample Screenshot 2](https://raw.githubusercontent.com/huazhiyuan2008/PagerSlidingTabStripPlus/master/pic/device-2015-01-05-234404.png)
 
 
 
 ref：https://github.com/astuetz/PagerSlidingTabStrip
+
+---------------
+----------华丽的分割线------------
+---------------
 
 # Android PagerSlidingTabStrip
 
